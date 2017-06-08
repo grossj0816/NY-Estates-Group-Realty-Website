@@ -4,11 +4,15 @@
 }
 
 .section-header{
-  font-weight: 300;
+  font-weight: 200;
 }
 
  body
  {
    background-color: #f5f5f5;
-   font-family: serif;
+   text-align: center;
  }
+
+.col l6 s12{
+  padding-left: 80px;
+}
