@@ -5,10 +5,14 @@
 
 .section-header{
   font-weight: 300;
+  text-align: center;
 }
 
  body
  {
    background-color: #f5f5f5;
-   text-align: center;
  }
+
+.member2Info{
+  text-align: right;
+}
