@@ -1,6 +1,5 @@
 /*This script is designed to access and modify the footer of all the footer items*/
 
-
 function updateFooter(footerParagraph, footerOffice, footerAddress, footerNumber)
 {
   var elFooterParagraph = document.getElementById('footerParagraph');
