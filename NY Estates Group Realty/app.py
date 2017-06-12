@@ -1,12 +1,19 @@
-from flask import Flask
-import webbrowser
+from flask import Flask, render_template
+from flask_material import Material
+from flask_wtf import Form, RecaptchaField
+from flask_wtf.file import FileField
+from wtforms import TextField, HiddenField, ValidationError, RadioField,\
+    BooleanField, SubmitField, IntegerField, FormField, validators
+from wtforms.validators import Required
+
 
 app = Flask(__name__)
+Material(app)
+
 
 @app.route('/')
 def index():
-    open('')
-
+    return render_template('/IndexPage.html')
 
 @app.route('/about')
 def about():
@@ -36,5 +43,6 @@ def member3():
 def member4():
     return render_template('/TeamMemberPage4.html')
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
