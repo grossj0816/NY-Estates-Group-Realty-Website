@@ -8,7 +8,7 @@ Languages Used:
 
 Frameworks Used:
 -Materialize(Front-End)
--Flask(Back-End)
+-Express.JS(Back-End)
 	-Database:
-		--MongoDB OR MySQL(not yet decided yet)
+		--MongoDB 
 
