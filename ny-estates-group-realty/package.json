@@ -1,0 +1,11 @@
+{
+  "name": "ny-estates-group-realty",
+  "version": "1.0.0",
+  "description": "Simple website with commercial and private property listings",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Juwan Gross",
+  "license": "ISC"
+}
