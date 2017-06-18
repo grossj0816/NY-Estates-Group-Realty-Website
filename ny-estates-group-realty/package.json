@@ -9,6 +9,8 @@
   "author": "Juwan Gross",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6"
   }
 }
