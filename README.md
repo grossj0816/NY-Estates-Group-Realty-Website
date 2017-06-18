@@ -9,6 +9,6 @@ Languages Used:
 Frameworks Used:
 -Materialize(Front-End)
 -Express.JS(Back-End)
-	-Database:
-		--MongoDB 
+Database:
+-MongoDB 
 
