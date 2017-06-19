@@ -14,10 +14,6 @@ let listingSchema = mongoose.Schema({
   Price:{
     type: String,
     required: true
-  },
-  PropertyType:{
-    type: String,
-    required: true
   }
 });
 
