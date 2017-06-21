@@ -8,16 +8,104 @@
   text-align: center;
 }
 
+.member2Info{
+  text-align: right;
+}
+
  body
  {
    background-color: #f5f5f5;
  }
 
-.member2Info{
-  text-align: right;
+.slider{
+  overflow: hidden;
+  height: 550px;
 }
 
-a.profLink::selection{
-  color: #0d47a1;
-  background: #ffffff;
+.slider figure div{
+  width: 20%;
+  float: left;
+}
+
+.slider figure img{
+  width:100%;
+  float :left;
+}
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 60s slidey infinite;
+}
+
+@keyframes slidey {
+  0%{
+    Left : 0%;
+  }
+
+  10%{
+    Left: 0%;
+  }
+
+  12%{
+    Left: -100%;
+  }
+
+  22%{
+    Left: -100%;
+  }
+
+  24%{
+    Left: -200%;
+  }
+
+  34%{
+    Left: -200%;
+  }
+
+  36%{
+    Left: -300%;
+  }
+
+  46%{
+    Left: -300%;
+  }
+
+  48%{
+    Left: -400%;
+  }
+
+  58%{
+    Left: -400%;
+  }
+
+  60%{
+    Left: -300%;
+  }
+
+  70%{
+    Left: -300%;
+  }
+
+  72%{
+    Left: -200%;
+  }
+
+  82%{
+    Left: -200%;
+  }
+
+  84%{
+    Left: -100%;
+  }
+
+  94%{
+    Left: -100%;
+  }
+
+  96%{
+    Left: 0%;
+  }
+
 }
