@@ -84,8 +84,6 @@ app.get('/ForSalePage', function(req, res){
     }
   })
 });
-
-
-app.listen(4000, function () {
-  console.log('Listening listening on port 4000!')
+app.listen(3000, function () {
+  console.log('Server listening on port 3000!')
 })
