@@ -8,18 +8,37 @@
   text-align: center;
 }
 
-.member2Info{
-  text-align: right;
-}
 
  body
  {
-   background-color: #f5f5f5;
+   background-color: #ffffff;
  }
+
+.profile-image{
+  float: left;
+}
+
+.member1Info{
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.member2Info{
+  text-align: justify;
+  padding-right: 10px;;
+}
+.member3Info{
+  text-align: justify;
+  padding-right: 10px;
+}
+.member4Info{
+  text-align: justify;
+  padding-right: 10px;
+}
 
 .slider{
   overflow: hidden;
-  height: 550px;
+  height: 625px;
 }
 
 .slider figure div{
@@ -36,76 +55,80 @@
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 60s slidey infinite;
+  animation: 30s slidey infinite;
 }
 
 @keyframes slidey {
   0%{
-    Left : 0%;
-  }
+  Left : 0%;
+}
 
-  10%{
-    Left: 0%;
-  }
+10%{
+  Left: 0%;
+}
 
-  12%{
-    Left: -100%;
-  }
+12%{
+  Left: -100%;
+}
 
-  22%{
-    Left: -100%;
-  }
+22%{
+  Left: -100%;
+}
 
-  24%{
-    Left: -200%;
-  }
+24%{
+  Left: -200%;
+}
 
-  34%{
-    Left: -200%;
-  }
+34%{
+  Left: -200%;
+}
 
-  36%{
-    Left: -300%;
-  }
+36%{
+  Left: -300%;
+}
 
-  46%{
-    Left: -300%;
-  }
+46%{
+  Left: -300%;
+}
 
-  48%{
-    Left: -400%;
-  }
+48%{
+  Left: -400%;
+}
 
-  58%{
-    Left: -400%;
-  }
+58%{
+  Left: -400%;
+}
 
-  60%{
-    Left: -300%;
-  }
+60%{
+  Left: -300%;
+}
 
-  70%{
-    Left: -300%;
-  }
+70%{
+  Left: -300%;
+}
 
-  72%{
-    Left: -200%;
-  }
+72%{
+  Left: -200%;
+}
 
-  82%{
-    Left: -200%;
-  }
+82%{
+  Left: -200%;
+}
 
-  84%{
-    Left: -100%;
-  }
+84%{
+  Left: -100%;
+}
 
-  94%{
-    Left: -100%;
-  }
+94%{
+  Left: -100%;
+}
 
-  96%{
-    Left: 0%;
-  }
+96%{
+  Left: 0%;
+}
+
+100%{
+  Left: 0%;
+}
 
 }
