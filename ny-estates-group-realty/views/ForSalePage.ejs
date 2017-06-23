@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Intro Page</title>
+    <title>For Sale</title>
  </head>
  <body>
   <!--Navigation-->
@@ -32,15 +32,53 @@
     </ul>
   </div>
 </nav>
-<h1><%=title %></h1>
 
-<div class="list-group">
-  <!-- loop over blog posts and render them -->
-  <% articles.forEach((art) => { %>
-      <p class="list-group-item-text"><%= art.Address %></p>
-      <p class="list-group-item-text"><%= art.Status %></p>
-      <p class="list-group-item-text"><%= art.Price %></p>
-
-    </a>
-  <% }) %>
+<div class="parallax-container">
+  <div class="parallax"><img src="assets\img\yellowdoor.jpg"></div>
 </div>
+
+<h3 class="section-header">For Sale</h3>
+
+<div class="container">
+  <div class="row">
+    <% articles.forEach(function(listing) {%>
+      <div class="col l4 m4 s12">
+        <a href="#"><%=listing.Address%></a>
+        <div class="verticalList">
+          <span><%=listing.Bed%><%=listing.Bath%><span>
+        </div>
+      </div>
+    <% })%>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="page-footer grey darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <p class="grey-text text-lighten-4" id="footerParagraph">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="grey-text text-lighten-3" id="footerOffice">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" id="footerAddress">Link 1</a></li>
+          <li><a class="grey-text text-lighten-3" id="footerNumber">Link 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+     © 2017 NY Estates Group Realty-All rights reserved
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+
+  <!--Import jQuery before materialize.js-->
+  <!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="assets\js\xtra-scripts.js"></script>
+<script type="text/javascript" src="assets\js\footer-scripts.js"></script>

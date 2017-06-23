@@ -14,7 +14,15 @@ let listingSchema = mongoose.Schema({
   Price:{
     type: String,
     required: true
-  }
+  },
+  Bed:{
+    type: Number,
+    required: true
+  },
+  Bath:{
+    type: Number,
+    required: true
+  },
 });
 
 

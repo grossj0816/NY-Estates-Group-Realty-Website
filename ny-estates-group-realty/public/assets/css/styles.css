@@ -3,15 +3,14 @@
   padding-left: 10;
 }
 
-.section-header{
-  font-weight: 300;
-  text-align: center;
-}
-
-
  body
  {
    background-color: #ffffff;
+ }
+
+ .section-header{
+   font-weight: 300;
+   text-align: center;
  }
 
 .profile-image{
@@ -35,6 +34,25 @@
   text-align: justify;
   padding-right: 10px;
 }
+
+.verticalLine{
+  border-left: thin #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slider{
   overflow: hidden;
