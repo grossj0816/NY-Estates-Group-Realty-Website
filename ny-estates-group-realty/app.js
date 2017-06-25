@@ -78,7 +78,6 @@ app.get('/ForSalePage', function(req, res){
     }
     else{
     res.render('ForSalePage', {
-        title:'Articles',
         articles:articles
      });
     }

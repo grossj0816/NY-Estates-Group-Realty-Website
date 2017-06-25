@@ -1,3 +1,4 @@
+/* This section  add styling features to the logo, body, and website titles*/
 .logo{
   font-weight: 300;
   padding-left: 10;
@@ -13,6 +14,9 @@
    text-align: center;
  }
 
+
+/* This section  add styling features to all the employee bio pages.
+I will change the memberInfo class values SOOOON!!!!!!!!*/
 .profile-image{
   float: left;
 }
@@ -40,113 +44,10 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slider{
-  overflow: hidden;
-  height: 625px;
+/* Adjust the font size of bathroom and bedroom items*/
+.aptBeds{
+font-size: 18px;
 }
-
-.slider figure div{
-  width: 20%;
-  float: left;
-}
-
-.slider figure img{
-  width:100%;
-  float :left;
-}
-.slider figure{
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 30s slidey infinite;
-}
-
-@keyframes slidey {
-  0%{
-  Left : 0%;
-}
-
-10%{
-  Left: 0%;
-}
-
-12%{
-  Left: -100%;
-}
-
-22%{
-  Left: -100%;
-}
-
-24%{
-  Left: -200%;
-}
-
-34%{
-  Left: -200%;
-}
-
-36%{
-  Left: -300%;
-}
-
-46%{
-  Left: -300%;
-}
-
-48%{
-  Left: -400%;
-}
-
-58%{
-  Left: -400%;
-}
-
-60%{
-  Left: -300%;
-}
-
-70%{
-  Left: -300%;
-}
-
-72%{
-  Left: -200%;
-}
-
-82%{
-  Left: -200%;
-}
-
-84%{
-  Left: -100%;
-}
-
-94%{
-  Left: -100%;
-}
-
-96%{
-  Left: 0%;
-}
-
-100%{
-  Left: 0%;
-}
-
+.aptBaths{
+  font-size: 18px;
 }

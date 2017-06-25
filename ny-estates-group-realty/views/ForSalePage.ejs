@@ -39,18 +39,28 @@
 
 <h3 class="section-header">For Sale</h3>
 
-<div class="container">
   <div class="row">
-    <% articles.forEach(function(listing) {%>
-      <div class="col l4 m4 s12">
-        <a href="#"><%=listing.Address%></a>
-        <div class="verticalList">
-          <span><%=listing.Bed%><%=listing.Bath%><span>
+      <% articles.forEach(function(listing) {%>
+        <div class="col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets\img\skycrapers.jpg ">
+              <span class="card-title"><%=listing.Price%></span>
+            </div>
+            <div class="card-content">
+              <h5><a href="#"><%=listing.Address%></a></h5><br />
+              <span><p class="aptBeds"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bedroom(s)</p> &nbsp; &nbsp;
+                    <p class="aptBaths"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bathroom(s)</p>
+               </span>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
         </div>
-      </div>
-    <% })%>
-  </div>
+      <% });%>
 </div>
+
 
 <!--Footer-->
 <footer class="page-footer grey darken-1">
