@@ -39,8 +39,9 @@
 
 <h3 class="section-header">For Sale</h3>
 
-  <div class="row">
-      <% articles.forEach(function(listing) {%>
+<div class="row">
+    <% articles.forEach(function(listing) { %>
+      <% if (listing.Address === "88-48 162 Street, Jamaica, NY 11432"){ %>
         <div class="col l3 m6 s12">
           <div class="card">
             <div class="card-image">
@@ -48,17 +49,62 @@
               <span class="card-title"><%=listing.Price%></span>
             </div>
             <div class="card-content">
-              <h5><a href="#"><%=listing.Address%></a></h5><br />
-              <span><p class="aptBeds"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bedroom(s)</p> &nbsp; &nbsp;
-                    <p class="aptBaths"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bathroom(s)</p>
-               </span>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <p class="apt"><i class="fa fa-home" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
             </div>
           </div>
         </div>
-      <% });%>
+      <% } %>
+      <% if (listing.Address === "172-19 Baisley Blvd, Jamaica, NY 11434"){ %>
+        <div class="col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets\img\skycrapers.jpg ">
+              <span class="card-title"><%=listing.Price%></span>
+            </div>
+            <div class="card-content">
+              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <span><p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s)</p>
+                    <p class="apt"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)</p>
+               </span>
+            </div>
+          </div>
+        </div>
+      <% } %>
+      <% if (listing.Address === "165-40 Baisley Blvd, Jamaica, NY 11434"){ %>
+        <div class="col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets\img\skycrapers.jpg ">
+              <span class="card-title"><%=listing.Price%></span>
+            </div>
+            <div class="card-content">
+              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <span>
+                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
+                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      <% } %>
+      <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
+        <div class="col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets\img\skycrapers.jpg ">
+              <span class="card-title"><%=listing.Price%></span>
+            </div>
+            <div class="card-content">
+              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <span><p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s)</p>
+                    <p class="apt"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)</p>
+               </span>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    <% });%>
 </div>
 
 
@@ -70,7 +116,7 @@
         <p class="grey-text text-lighten-4" id="footerParagraph">You can use rows and columns here to organize your footer content.</p>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="grey-text text-lighten-3" id="footerOffice">Links</h5>
+        <p class="grey-text text-lighten-3" id="footerOffice">Links</p>
         <ul>
           <li><a class="grey-text text-lighten-3" id="footerAddress">Link 1</a></li>
           <li><a class="grey-text text-lighten-3" id="footerNumber">Link 2</a></li>
@@ -80,7 +126,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-     © 2017 NY Estates Group Realty-All rights reserved
+     © 2017 NY Estates Group Inc.-All rights reserved
     <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>

@@ -7,10 +7,6 @@ let listingSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  Status:{
-    type: String,
-    required: true
-  },
   Price:{
     type: String,
     required: true
@@ -23,6 +19,14 @@ let listingSchema = mongoose.Schema({
     type: Number,
     required: true
   },
+  PropertyType:{
+    type: String,
+    required: true
+  },
+  Stories:{
+    type: String,
+    required: false
+  }
 });
 
 

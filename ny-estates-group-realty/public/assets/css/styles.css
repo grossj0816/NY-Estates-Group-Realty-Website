@@ -45,9 +45,10 @@ I will change the memberInfo class values SOOOON!!!!!!!!*/
 
 
 /* Adjust the font size of bathroom and bedroom items*/
-.aptBeds{
+.apt{
 font-size: 18px;
 }
-.aptBaths{
+
+.aptAddress{
   font-size: 18px;
 }
