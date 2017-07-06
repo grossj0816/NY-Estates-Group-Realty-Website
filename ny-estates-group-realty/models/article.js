@@ -7,6 +7,10 @@ let listingSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  Status:{
+    type: String,
+    required: false
+  },
   Price:{
     type: String,
     required: true

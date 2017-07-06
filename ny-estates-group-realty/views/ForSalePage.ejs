@@ -37,7 +37,7 @@
   <div class="parallax"><img src="assets\img\yellowdoor.jpg"></div>
 </div>
 
-<h3 class="section-header">For Sale</h3>
+<h3 class="section-header">For Sale</h3>S
 
 <div class="row">
     <% articles.forEach(function(listing) { %>
@@ -51,6 +51,7 @@
             <div class="card-content">
               <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
               <p class="apt"><i class="fa fa-home" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
+              <p class="apt"><i class="fa fa-check-circle" aria-hidden="true">&nbsp;</i><%=listing.Status%></p>
             </div>
           </div>
         </div>
@@ -82,7 +83,7 @@
               <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
               <span>
                 <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
-                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
+                <p class="apt"><i class="fa <fa-building-o></fa-building-o>" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
               </span>
             </div>
           </div>
