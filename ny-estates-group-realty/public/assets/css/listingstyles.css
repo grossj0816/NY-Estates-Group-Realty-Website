@@ -1,0 +1,8 @@
+/* Adjust the font size of bathroom and bedroom items*/
+.apt{
+font-size: 18px;
+}
+
+.aptAddress{
+  font-size: 20px;
+}

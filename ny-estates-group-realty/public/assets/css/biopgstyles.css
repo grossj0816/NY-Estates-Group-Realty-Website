@@ -1,0 +1,27 @@
+/* This section  add styling features to all the employee bio pages.
+I will change the memberInfo class values SOOOON!!!!!!!!*/
+.profile-image{
+  float: left;
+}
+
+.member1Info{
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.member2Info{
+  text-align: justify;
+  padding-right: 10px;;
+}
+.member3Info{
+  text-align: justify;
+  padding-right: 10px;
+}
+.member4Info{
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.verticalLine{
+  border-left: thin #ff0000;
+}

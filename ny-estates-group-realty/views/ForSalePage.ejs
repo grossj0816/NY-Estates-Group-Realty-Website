@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/listingstyles.css">
     <title>For Sale</title>
  </head>
  <body>
@@ -34,7 +35,7 @@
 </nav>
 
 <div class="parallax-container">
-  <div class="parallax"><img src="assets\img\yellowdoor.jpg"></div>
+  <div class="parallax"><img src="assets\img\forsale.jpg"></div>
 </div>
 
 <h3 class="section-header">For Sale</h3>S
@@ -72,23 +73,6 @@
           </div>
         </div>
       <% } %>
-      <% if (listing.Address === "165-40 Baisley Blvd, Jamaica, NY 11434"){ %>
-        <div class="col l3 m6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets\img\listingimg\165-40 Baisley Blvd, Jamaica, NY 11434.jpg" height="200">
-              <span class="card-title"><%=listing.Price%></span>
-            </div>
-            <div class="card-content">
-              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
-              <span>
-                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
-                <p class="apt"><i class="fa <fa-building-o></fa-building-o>" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      <% } %>
       <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
         <div class="col l3 m6 s12">
           <div class="card">
@@ -105,7 +89,24 @@
           </div>
         </div>
       <% } %>
-    <% });%>
+      <% if (listing.Address === "165-40 Baisley Blvd, Jamaica, NY 11434"){ %>
+        <div class="col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets\img\listingimg\165-40 Baisley Blvd, Jamaica, NY 11434.jpg" height="200">
+              <span class="card-title"><%=listing.Price%></span>
+            </div>
+            <div class="card-content">
+              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <span>
+                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
+                <p class="apt"><i class="fa fa-building-o" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      <% } %>
+  <% });%>
 </div>
 
 <!--Footer-->
