@@ -50,28 +50,31 @@ app.get('/TeamPage', function(req, res){
   res.render('TeamPage');
 });
 
-//Employee Bio Route
+//Employee Bio1 Route
 app.get('/TeamMemberPage1', function(req, res){
   res.render('TeamMemberPage1');
 });
 
-//Employee Bio Route
+//Employee Bio2 Route
 app.get('/TeamMemberPage2', function(req, res){
   res.render('TeamMemberPage2');
 });
 
-//Employee Bio Route
+//Employee Bio3 Route
 app.get('/TeamMemberPage3', function(req, res){
   res.render('TeamMemberPage3');
 });
 
-//Employee Bio Route
+//Employee Bio4 Route
 app.get('/TeamMemberPage4', function(req, res){
   res.render('TeamMemberPage4');
 });
 
 //Employee Bio Route
 app.get('/ForSalePage', function(req, res){
+  //Finding all the listings(articles),
+  //and rendering the retrieved articles in
+  //the ForSalePage.
   Article.find({}, function(err, articles) {
     if(err){
       console.log(err);
