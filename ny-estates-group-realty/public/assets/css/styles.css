@@ -9,6 +9,9 @@
    /*background-color: #ffffff;*/
    background-color: #eceff1;
  }
+  .parallax-container{
+   height: 350px;
+ }
 
  .section-header{
    font-weight: 300;

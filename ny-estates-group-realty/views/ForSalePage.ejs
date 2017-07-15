@@ -10,7 +10,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/styles.css">
       <link rel="stylesheet" href="assets/css/listingstyles.css">
-    <title>For Sale</title>
+    <title>For Sale-NY Estates Group Realty</title>
  </head>
  <body>
   <!--Navigation-->
@@ -38,76 +38,106 @@
   <div class="parallax"><img src="assets\img\parallaximg\forsale.jpg"></div>
 </div>
 
-<h3 class="section-header">For Sale</h3>S
+<h3 class="section-header">For Sale</h3>
 
 <div class="row">
-    <% articles.forEach(function(listing) { %>
-      <% if (listing.Address === "88-48 162 Street, Jamaica, NY 11432"){ %>
-        <div class="col l3 m6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets\img\listingimg\88-48 162 Street, Jamaica, NY 11432.jpg" height="200">
-              <span class="card-title"><%=listing.Price%></span>
-            </div>
-            <div class="card-content">
-              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
-              <p class="apt"><i class="fa fa-home" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
-              <p class="apt"><i class="fa fa-check-circle" aria-hidden="true">&nbsp;</i><%=listing.Status%></p>
-            </div>
+  <% articles.forEach(function(listing) { %>
+    <% if (listing.Address === "88-48 162 Street, Jamaica, NY 11432"){ %>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets\img\listingimg\88-48 162 Street, Jamaica, NY 11432.jpg" height="200">
+            <span class="card-title"><%=listing.Price%></span>
+          </div>
+          <div class="card-content">
+            <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <hr />
+              <p class="apt"><i class="fa fa-home" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%> &nbsp;&nbsp;</p>
           </div>
         </div>
-      <% } %>
-      <% if (listing.Address === "172-19 Baisley Blvd, Jamaica, NY 11434"){ %>
-        <div class="col l3 m6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets\img\listingimg\172-19 Baisley Blvd, Jamaica, NY 11434.jpg" height="200">
-              <span class="card-title"><%=listing.Price%></span>
-            </div>
-            <div class="card-content">
-              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
-              <span><p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s)</p>
-                    <p class="apt"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)</p>
-               </span>
-            </div>
+      </div>
+    <% } %>
+    <% if (listing.Address === "172-19 Baisley Blvd, Jamaica, NY 11434"){ %>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets\img\listingimg\172-19 Baisley Blvd, Jamaica, NY 11434.jpg" height="200">
+            <span class="card-title"><%=listing.Price%></span>
+          </div>
+          <div class="card-content">
+            <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+              <hr />
+            <span>
+              <p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s) &nbsp; &nbsp;
+                             <i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)
+              </p>
+            </span>
           </div>
         </div>
-      <% } %>
-      <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
-        <div class="col l3 m6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets\img\parallaximg\skycrapers.jpg" height="200">
-              <span class="card-title"><%=listing.Price%></span>
-            </div>
-            <div class="card-content">
-              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
-              <span><p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s)</p>
-                    <p class="apt"><i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)</p>
-               </span>
-            </div>
+      </div>
+    <% } %>
+    <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets\img\parallaximg\skycrapers.jpg" height="200">
+            <span class="card-title"><%=listing.Price%></span>
+          </div>
+          <div class="card-content">
+            <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+            <hr />
+            <span>
+              <p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s) &nbsp; &nbsp;
+                             <i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)
+              </p>
+            </span>
           </div>
         </div>
-      <% } %>
-      <% if (listing.Address === "165-40 Baisley Blvd, Jamaica, NY 11434"){ %>
-        <div class="col l3 m6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="assets\img\listingimg\165-40 Baisley Blvd, Jamaica, NY 11434.jpg" height="200">
-              <span class="card-title"><%=listing.Price%></span>
-            </div>
-            <div class="card-content">
-              <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
-              <span>
-                <p class="apt"><i class="fa fa-building" aria-hidden="true">&nbsp;</i><%=listing.PropertyType%></p>
-                <p class="apt"><i class="fa fa-building-o" aria-hidden="true">&nbsp;</i><%=listing.Stories%> Story</p>
-              </span>
-            </div>
+      </div>
+    <% } %>
+    <!--Example 1-->
+    <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets\img\parallaximg\skycrapers.jpg" height="200">
+            <span class="card-title"><%=listing.Price%></span>
+          </div>
+          <div class="card-content">
+            <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+            <hr />
+            <span>
+              <p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s) &nbsp; &nbsp;
+                             <i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)
+              </p>
+            </span>
           </div>
         </div>
-      <% } %>
+      </div>
+    <% } %>
+    <!--Example 2-->
+    <% if (listing.Address === "135-53 234th street, Rosedale, NY 11422"){ %>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets\img\parallaximg\skycrapers.jpg" height="200">
+            <span class="card-title"><%=listing.Price%></span>
+          </div>
+          <div class="card-content">
+            <p class="aptAddress"><a href="#"><%=listing.Address%></a></p><br />
+            <hr />
+            <span>
+              <p class="apt"><i class="fa fa-bed" aria-hidden="true">&nbsp;</i><%=listing.Bed%> Bed(s) &nbsp; &nbsp;
+                             <i class="fa fa-bath" aria-hidden="true">&nbsp;</i><%=listing.Bath%> Bath(s)
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+    <% } %>
   <% });%>
 </div>
+
 
 <!--Footer-->
 <footer class="page-footer grey darken-1">
@@ -139,3 +169,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script type="text/javascript" src="assets\js\xtra-scripts.js"></script>
 <script type="text/javascript" src="assets\js\footer-scripts.js"></script>
+
+
+</body>
+</html>
