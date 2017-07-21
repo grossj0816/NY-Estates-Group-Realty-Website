@@ -2,22 +2,30 @@
 I will change the memberInfo class values SOOOON!!!!!!!!*/
 .profile-image{
   float: left;
+  padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 5px;
 }
 
-.member1Info{
+#member1Info{
   text-align: justify;
+  font-size: 16px;
 
 }
-.member2Info{
+#member2Info{
   text-align: justify;
+  font-size: 16px;
+
 }
-.member3Info{
+#member3Info{
   text-align: justify;
+  font-size: 16px;
+
 }
-.member4Info{
+#member4Info{
   text-align: justify;
+  font-size: 16px;
+
 }
 
 
