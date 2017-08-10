@@ -25,6 +25,7 @@ db.on('error', function(err){
 app.use(express.static('public'));
 app.use(express.static('views'));
 
+//set the templating engine to ejs
 app.set('view engine', 'ejs')
 
 //Bring in Models
